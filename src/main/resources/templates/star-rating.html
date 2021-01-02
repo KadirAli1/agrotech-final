@@ -1,0 +1,10 @@
+<div style="border: 1px black solid">
+<!--    <div th:text="${product.id}"></div>-->
+    <form th:action="@{/rating}" method="post" class="mt-5">
+<!--        <input value="0" type="hidden" class="rating" data-glyphicon="0" th:field="*{stars}">-->
+        <input th:value="${product.stars}" type="hidden" name="stars" class="rating" data-glyphicon="0">
+        <input th:value="${product.id}" name="productId" type="hidden">
+        <button class="btn btn-primary" type="submit">Submit stars</button>
+    </form>
+</div>
+

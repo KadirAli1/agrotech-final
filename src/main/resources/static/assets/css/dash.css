@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {text-decoration: none !important; color: white !important;}
+li {list-style: none; !important}
+
+.dash_leftSide {
+    width: 20%;
+    height: 100%;
+    background: #373737;
+    position: fixed;
+}
+
+.dash_leftSideLogo {
+    height: 100px;
+    position: relative;
+    background: #252525;
+}
+.dash_leftSideLogo img {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+.dash_leftSideNav {margin-top: 25px;}
+.dash_leftSideNav ul {margin: 0; padding: 0;}
+.dash_leftSideNav ul li {
+    padding: 10px 0;
+    display: block;
+    color: white;
+    font-size: 16.5px;
+    cursor: pointer;
+    text-indent: 15px;
+}
+.dash_leftSideNav ul li:hover {background: #323232}
+.dash_leftSideNav ul li.active {background: #252525}
+
+.dash_rightSide {
+    width: 80%;
+    float: right;
+}
+
+.dash_rightSideWelcome {
+    width: 100%;
+    height: 100px;
+    background: #252525;
+}
+.dash_rightSideWelcome p {
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.dash_homeTabCenter {
+    margin: 0 auto;
+}
+
+.dash_homeBoxItem {
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+    float: left;
+}
+.dash_homeBoxItem:nth-child(1) {background: #0D1F2D;}
+.dash_homeBoxItem:nth-child(2) {background: #5299D3;}
+.dash_homeBoxItem:nth-child(3) {background: #E84855;}
+
+.dash_homeBoxItem p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: white;
+    text-align: center;
+}
+.dash_homeBoxItem p span {
+    font-size: 50px;
+}
+.dash_homeBoxItem h5 {
+    width: 100%;
+    background: rgba(0, 0, 0, .75);
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.dash_tabContent {
+    width: 85%;
+    margin: 25px auto;
+}
+
+.nav-tabs li.active a {color: black !important;}
+
+.dash_productsImage {width: 100px;}
+
+.dash_settingsForm {
+    width: 550px;
+    margin: 50px auto;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.dash_settingsForm label {
+    text-align: left !important;
+}
+.generatedInput {
+    width: 85%;
+    display: inline !important;
+}
+.removeGeneratedInput {
+    margin-left: 10px;
+    cursor: pointer;
+}
