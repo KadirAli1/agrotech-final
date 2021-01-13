@@ -118,4 +118,19 @@ public class Product {
     public int hashCode() {
         return Objects.hash(getId());
     }
+
+    public Product(Long id, Date date, String imageName, String name,  byte[] photoData, Double price, String specs, Country country, ProductType productType) {
+        this.id = id;
+        this.name = name;
+        this.imageName = imageName;
+        this.photoData = photoData;
+        this.specs = specs;
+        this.price = price;
+        this.date = date;
+        this.productType = productType;
+        this.country = country;
+    }
+
+    public Product() {
+    }
 }

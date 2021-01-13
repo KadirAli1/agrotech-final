@@ -47,4 +47,12 @@ public class UserRole implements GrantedAuthority {
 
         return null;
     }
+
+    public UserRole(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public UserRole() {
+    }
 }

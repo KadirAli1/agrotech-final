@@ -40,4 +40,13 @@ public class ProductType {
     public void setSpecs(String specs) {
         this.specs = specs;
     }
+
+    public ProductType(Long id, String name, String specs) {
+        this.id = id;
+        this.name = name;
+        this.specs = specs;
+    }
+
+    public ProductType() {
+    }
 }

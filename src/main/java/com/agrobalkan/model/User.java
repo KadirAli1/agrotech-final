@@ -122,4 +122,17 @@ public class User implements UserDetails {
         grants.add(getRole());
         return grants;
     }
+
+    public User(Long id, String username, String name, String password,  String surname, String email, UserRole role) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.role = role;
+    }
+
+    public User() {
+    }
 }
