@@ -208,7 +208,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 product_card" th:each="product : ${products}">
+                    <div class="col-md-4 product_card" th:each="product : ${products}" style="position: relative;">
 
                         <div class="productCardImage">
                             <img th:src="@{${'/rest/products/image/' + product.id}}" onError="this.onerror=null;this.src='/assets/images/productFallbackImage.png';">

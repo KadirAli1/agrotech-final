@@ -49,6 +49,7 @@ public class ProductResource {
     public ResponseEntity<byte[]> getImage(@PathVariable("id") Long id) throws IOException {
 
         Product product = productService.findOne(id);
+
         byte[] imageContent = product.getPhotoData();
 
         final HttpHeaders headers = new HttpHeaders();
