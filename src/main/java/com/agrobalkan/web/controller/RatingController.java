@@ -18,15 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-//@RequestMapping({"/index" })
 @RequestMapping({"/rating" })
 public class RatingController {
-
-//    @GetMapping
-//    public String main(Model model) {
-//        model.addAttribute("rating", new Rating());
-//        return "index";
-//    }
     @Autowired
     private UserService userService;
 
@@ -38,7 +31,7 @@ public class RatingController {
 
     @PostMapping
     public String save(RatingDto ratingDto, Model model) {
-//        model.addAttribute("rating", ratingDto);
+
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 
         String username = ((UserDetails)principal).getUsername();

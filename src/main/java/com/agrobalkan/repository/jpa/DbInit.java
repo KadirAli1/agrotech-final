@@ -45,7 +45,8 @@ public class DbInit implements CommandLineRunner {
         productTypeRepository.flush();
 
         Country country1 = new Country(1L, "Macedonia");
-        Country country2 = new Country(2L, "Albania");
+        Country country2 = new Country(3L, "Albania");
+
         Country country3 = new Country(3L, "Kosova");
 
         countryRepository.saveAll(Arrays.asList(country1, country2, country3));
